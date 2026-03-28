@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Previ-A — Cócteles Artesanales</title>
+  <link rel="stylesheet" href="estilo.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Cursor personalizado -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-icon">🍃</span>
+      <span class="logo-text">La Previ-A</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#catalogo">Menú</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a class="nav-cta" href="#catalogo">Ver Carta</a>
+    <button class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#inicio" onclick="closeMobile()">Inicio</a></li>
+      <li><a href="#catalogo" onclick="closeMobile()">Menú</a></li>
+      <li><a href="#contacto" onclick="closeMobile()">Contacto</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg">
+      <div class="hero-circles">
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+        <div class="circle c3"></div>
+      </div>
+      <div class="floating-leaves">
+        <span class="leaf l1">🌿</span>
+        <span class="leaf l2">🌿</span>
+        <span class="leaf l3">🍋</span>
+        <span class="leaf l4">🌿</span>
+      </div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-tag fade-up">✦ Cócteles artesanales a domicilio</p>
+      <h1 class="hero-title fade-up">El mejor<br /><em>mojito</em><br />llega a ti</h1>
+      <p class="hero-desc fade-up">Preparados con menta fresca, limón natural y ron premium. Hacemos tu pedido y te lo enviamos donde estés.</p>
+      <div class="hero-btns fade-up">
+        <a href="#catalogo" class="btn-primary">Ver Carta <i class="fa-solid fa-arrow-down"></i></a>
+        <a href="https://wa.me/56972850740?text=Hola!%20quiero%20hacer%20un%20pedido%20de%20mojitos%20🍃" target="_blank" class="btn-wsp">
+          <i class="fa-brands fa-whatsapp"></i> Pedir ahora
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual fade-up">
+      <div class="glass-mockup">
+        <div class="glass-body">
+          <div class="liquid"></div>
+          <div class="ice i1"></div>
+          <div class="ice i2"></div>
+          <div class="ice i3"></div>
+          <div class="straw"></div>
+          <div class="mint">🌿</div>
+        </div>
+        <div class="glass-shine"></div>
+        <div class="glass-base"></div>
+      </div>
+      <div class="hero-badge">
+        <span class="badge-num">100%</span>
+        <span class="badge-txt">Natural</span>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- CATALOGO -->
+  <section class="catalogo" id="catalogo">
+    <div class="section-header">
+      <p class="section-tag">✦ Nuestra Carta</p>
+      <h2 class="section-title">Elige tu <em>favorito</em></h2>
+      <p class="section-sub">Todos preparados al momento con ingredientes frescos y premium.</p>
+    </div>
+
+    <!-- FILTROS -->
+
+
+    <div class="cards-grid" id="cards-grid">
+      <!-- Cards generadas por JS -->
+    </div>
+  </section>
+
+
+
+
+  <!-- CTA WASA -->
+  <section class="cta-wsp" id="contacto">
+    <div class="cta-bg"></div>
+    <div class="cta-content">
+      <p class="section-tag light">✦ ¡Estamos listos!</p>
+      <h2>¿Listo para pedir<br /><em>tu mojito?</em></h2>
+      <p>Escríbenos por WhatsApp y te atendemos al instante. Pedidos de lunes a domingo.</p>
+      <a href="https://wa.me/56972850740?text=Hola!%20quiero%20hacer%20un%20pedido%20de%20mojitos%20🍃" target="_blank" class="btn-wsp-big">
+        <i class="fa-brands fa-whatsapp"></i>
+        Hacer mi pedido por WhatsApp
+        <span class="pulse-ring"></span>
+      </a>
+      <p class="cta-note">También puedes escribirnos a <strong>@LaPrevia</strong> en Instagram</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="nav-logo"><span class="logo-icon">🍃</span><span class="logo-text">La Previ-A</span></div>
+        <p>Cócteles artesanales a domicilio. Frescura garantizada en cada sorbo.</p>
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://wa.me/56972850740" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#catalogo">Menú</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Contacto</h4>
+        <ul>
+          <li><i class="fa-brands fa-whatsapp"></i> +56 9 7285 0740</li>
+          <li><i class="fa-solid fa-clock"></i> Lun–Dom 12:00–23:00</li>
+          <li><i class="fa-solid fa-location-dot"></i> Santiago, Chile</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 La Previ-A — Todos los derechos reservados.</p>
+      <p>Hecho con 🍃 y mucho ron</p>
+    </div>
+  </footer>
+
+  <script src=".js"></script>
+</body>
+</html>
