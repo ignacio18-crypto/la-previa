@@ -642,7 +642,7 @@ em { font-style: italic; color: var(--verde); }
 
 .footer-links h4 { font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--verde); margin-bottom: 1.2rem; font-weight: 500; }
 .footer-links ul { display: flex; flex-direction: column; gap: 0.7rem; }
-.footer-links li, .footer-links a { font-size: 0.88rem; color: var(--text-muted); display: flex; align-items: center; gap: 0.5rem; transition: color var(--transition); }
+.footer-links li, .footser-links a { font-size: 0.88rem; color: var(--text-muted); display: flex; align-items: center; gap: 0.5rem; transition: color var(--transition); }
 .footer-links a:hover { color: var(--text); }
 .footer-links i { font-size: 0.75rem; color: var(--verde); }
 
